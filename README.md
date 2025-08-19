@@ -1,10 +1,10 @@
 Social Media Streaming – Real-Time Trending Words
-Overview
+---Overview
 
 This project demonstrates a real-time social media streaming application using Apache Spark Structured Streaming.
 The main goal is to track trending words from live data, similar to analyzing social media posts, and display them with their count and timestamp in real-time.
 
-Features
+---Features
 
 Real-time streaming word count from live input
 
@@ -16,7 +16,7 @@ Output displayed on the console for easy monitoring
 
 Fully dynamic and scalable
 
-Technologies Used
+---Technologies Used
 
 Apache Spark 3.x
 
@@ -24,7 +24,7 @@ Scala
 
 Java 8+
 
-Socket Streaming (localhost)
+---Socket Streaming (localhost)
 
 Project Structure
 SocialMediaStream/
@@ -35,7 +35,7 @@ SocialMediaStream/
 ├── README.md
 └── build.sbt
 
-How It Works
+---How It Works
 1. Spark Setup
 
 Initialize a Spark session using:
@@ -78,7 +78,8 @@ val query = trending.writeStream
     .start()
 
 
-Output example:
+---Output example:
+<img width="309" height="181" alt="image" src="https://github.com/user-attachments/assets/9044dd31-e334-4cb1-a6d2-30a531d182a8" />
 
 +-----+-----+-------------------+
 |word |count|timestamp          |
@@ -88,21 +89,20 @@ Output example:
 |world|1    |2025-08-19 22:30:01|
 +-----+-----+-------------------+
 
-How to Run
+---How to Run
 
 Start a socket server (for testing):
 
 nc -lk 9999   # Linux/Mac
-# or
-telnet localhost 9999   # Windows
 
-
-Run the Scala program:
+---Run the Scala program:
 
 sbt run
 
 
-Type messages in the socket server. Example:
+Type messages in the socket server.
+
+--Example:
 
 hello spark hello world spark
 
