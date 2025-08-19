@@ -6,34 +6,31 @@ The main goal is to track trending words from live data, similar to analyzing so
 
 ---Features
 
-Real-time streaming word count from live input
+-Real-time streaming word count from live input
 
-Displays top trending words with their current timestamp
+-Displays top trending words with their current timestamp
 
-Uses Spark Structured Streaming for efficient real-time processing
+-Uses Spark Structured Streaming for efficient real-time processing
 
-Output displayed on the console for easy monitoring
+-Output displayed on the console for easy monitoring
 
-Fully dynamic and scalable
+-Fully dynamic and scalable
 
 ---Technologies Used
 
-Apache Spark 3.x
+Apache Spark 
 
 Scala
 
-Java 8+
+Java 
 
 ---Socket Streaming (localhost)
 
 Project Structure
-SocialMediaStream/
-├── src/
-│   └── main/
-│       └── scala/
-│           └── SocialMediaStream.scala
-├── README.md
-└── build.sbt
+
+
+
+<img width="412" height="202" alt="image" src="https://github.com/user-attachments/assets/a4d8599c-7b30-48a3-8709-5790c73a438a" />
 
 ---How It Works
 1. Spark Setup
@@ -79,15 +76,9 @@ val query = trending.writeStream
 
 
 ---Output example:
-<img width="309" height="181" alt="image" src="https://github.com/user-attachments/assets/9044dd31-e334-4cb1-a6d2-30a531d182a8" />
 
-+-----+-----+-------------------+
-|word |count|timestamp          |
-+-----+-----+-------------------+
-|spark|3    |2025-08-19 22:30:01|
-|hello|2    |2025-08-19 22:30:01|
-|world|1    |2025-08-19 22:30:01|
-+-----+-----+-------------------+
+
+<img width="309" height="181" alt="image" src="https://github.com/user-attachments/assets/9044dd31-e334-4cb1-a6d2-30a531d182a8" />
 
 ---How to Run
 
